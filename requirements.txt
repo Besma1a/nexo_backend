@@ -1,0 +1,6 @@
+
+pandas==2.2.2
+numpy==2.0.1
+python-dateutil==2.9.0.post0
+fastapi==0.114.2
+uvicorn==0.30.6

@@ -1,0 +1,26 @@
+user_id,name,age,gender,diet,allergies,budget_sensitivity,favorite_categories,disliked_categories,time_preferences,spice_tolerance,health_conscious,location,registration_date,last_visit,visit_frequency,avg_order_value,loyalty_tier,preferred_payment,special_occasions
+1,Sarah Johnson,28,female,vegetarian,"nuts,gluten",medium,"dessert,pizza,coffee","spicy_food",morning_afternoon,low,high,Algiers,2023-01-15,2024-01-15,weekly,450,gold,card,birthday
+2,Ahmed Benali,35,male,chicken,"shellfish",low,"pizza,drinks","dessert",lunch_dinner,high,medium,Algiers,2023-02-20,2024-01-14,daily,380,silver,cash,none
+3,Fatima Zahra,22,female,vegan,"dairy,eggs",high,"juice,pastry","meat",morning,low,high,Algiers,2023-03-10,2024-01-13,weekly,280,bronze,card,none
+4,Omar Cherif,41,male,none,none,low,"pizza,meat,drinks","dessert",dinner,medium,low,Algiers,2023-01-25,2024-01-12,daily,520,platinum,cash,anniversary
+5,Leila Boudjedra,29,female,vegetarian,"nuts",medium,"pizza,dessert,coffee","spicy_food",afternoon,low,high,Algiers,2023-04-05,2024-01-11,weekly,420,gold,card,valentine
+6,Youssef Mekki,33,male,chicken,"shellfish",medium,"pizza,drinks","dessert",lunch_dinner,high,medium,Algiers,2023-02-14,2024-01-10,weekly,360,silver,cash,none
+7,Ines Boukhelkhal,26,female,vegan,"dairy",high,"juice,pastry,tea","meat",morning_afternoon,low,high,Algiers,2023-05-12,2024-01-09,weekly,320,bronze,card,none
+8,Karim Benhamida,38,male,none,none,low,"pizza,meat,drinks","dessert",dinner,high,low,Algiers,2023-01-08,2024-01-08,daily,580,platinum,cash,birthday
+9,Nour El Houda,24,female,vegetarian,"gluten",medium,"pizza,dessert,coffee","spicy_food",afternoon,low,high,Algiers,2023-06-18,2024-01-07,weekly,440,gold,card,none
+10,Mehdi Boudiaf,31,male,chicken,"shellfish",low,"pizza,drinks","dessert",lunch_dinner,medium,medium,Algiers,2023-03-22,2024-01-06,daily,400,silver,cash,none
+11,Aicha Belkacem,27,female,vegan,"dairy,eggs,nuts",high,"juice,pastry,tea","meat",morning,low,high,Algiers,2023-07-03,2024-01-05,weekly,290,bronze,card,none
+12,Adel Chabane,44,male,none,none,low,"pizza,meat,drinks","dessert",dinner,high,low,Algiers,2023-01-12,2024-01-04,daily,620,platinum,cash,anniversary
+13,Salima Benaissa,25,female,vegetarian,"nuts",medium,"pizza,dessert,coffee","spicy_food",afternoon,low,high,Algiers,2023-08-15,2024-01-03,weekly,460,gold,card,none
+14,Reda Hamdi,36,male,chicken,"shellfish",medium,"pizza,drinks","dessert",lunch_dinner,high,medium,Algiers,2023-04-28,2024-01-02,weekly,380,silver,cash,none
+15,Samira Khelil,30,female,vegan,"dairy,gluten",high,"juice,pastry,tea","meat",morning_afternoon,low,high,Algiers,2023-09-07,2024-01-01,weekly,310,bronze,card,none
+16,Tarek Bouzid,39,male,none,none,low,"pizza,meat,drinks","dessert",dinner,high,low,Algiers,2023-02-05,2023-12-31,daily,540,platinum,cash,birthday
+17,Houda Mansouri,23,female,vegetarian,"nuts",medium,"pizza,dessert,coffee","spicy_food",afternoon,low,high,Algiers,2023-10-12,2023-12-30,weekly,430,gold,card,none
+18,Bilal Saadi,32,male,chicken,"shellfish",low,"pizza,drinks","dessert",lunch_dinner,medium,medium,Algiers,2023-05-20,2023-12-29,daily,390,silver,cash,none
+19,Nadia Benali,28,female,vegan,"dairy,eggs",high,"juice,pastry,tea","meat",morning,low,high,Algiers,2023-11-18,2023-12-28,weekly,300,bronze,card,none
+20,Farid Khelifi,42,male,none,none,low,"pizza,meat,drinks","dessert",dinner,high,low,Algiers,2023-01-30,2023-12-27,daily,600,platinum,cash,anniversary
+21,Amina Cherif,26,female,vegetarian,"gluten",medium,"pizza,dessert,coffee","spicy_food",afternoon,low,high,Algiers,2023-12-05,2023-12-26,weekly,420,gold,card,none
+22,Khaled Boudjedra,34,male,chicken,"shellfish",medium,"pizza,drinks","dessert",lunch_dinner,high,medium,Algiers,2023-06-10,2023-12-25,weekly,370,silver,cash,none
+23,Djamila Mekki,29,female,vegan,"dairy,nuts",high,"juice,pastry,tea","meat",morning_afternoon,low,high,Algiers,2023-01-18,2023-12-24,weekly,285,bronze,card,none
+24,Mustapha Boukhelkhal,37,male,none,none,low,"pizza,meat,drinks","dessert",dinner,high,low,Algiers,2023-07-25,2023-12-23,daily,560,platinum,cash,birthday
+25,Asma Benhamida,31,female,vegetarian,"nuts",medium,"pizza,dessert,coffee","spicy_food",afternoon,low,high,Algiers,2023-08-30,2023-12-22,weekly,450,gold,card,none
