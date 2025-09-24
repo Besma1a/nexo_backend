@@ -22,3 +22,4 @@ curl "http://127.0.0.1:8000/notifications?user_id=1"
 ## Django integration
 Use helpers in `src/django_integration.py` to convert QuerySets to DataFrames and pass them to the hybrid recommender from your views.
 
+

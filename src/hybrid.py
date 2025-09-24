@@ -6,6 +6,7 @@ from typing import List, Dict
 from .data_loader import load_all
 from .contextual import Context
 from .collaborative import cf_scores_for_user
+from .utils import season_of
 
 
 def compute_user_favorites(orders: pd.DataFrame) -> pd.Series:
@@ -17,8 +18,11 @@ def compute_user_favorites(orders: pd.DataFrame) -> pd.Series:
 def score_items(user_id: int, ctx: Context, users: pd.DataFrame, items: pd.DataFrame, orders: pd.DataFrame) -> pd.DataFrame:
     ctx.ensure()
 
-    # Base score by item popularity
-    popularity = orders.groupby("item_id").size()
+    # Base score: recency-decayed popularity
+    now = pd.Timestamp.now()
+    orders = orders.assign(_age_days=(now - orders["timestamp"]).dt.days.clip(lower=0))
+    decay = 0.5 ** (orders["_age_days"] / 30.0)  # half-life ~30 days
+    popularity = orders.groupby("item_id").apply(lambda g: (0.2 + decay.loc[g.index]).sum())
     popularity = (popularity - popularity.min()) / (popularity.max() - popularity.min() + 1e-6)
 
     df = items.copy()
@@ -44,6 +48,15 @@ def score_items(user_id: int, ctx: Context, users: pd.DataFrame, items: pd.DataF
         lambda t: 1.2 if t == ctx.time_of_day else (1.05 if t in ["any", "all"] else 1.0)
     ))
 
+    # Seasonality boost (items seasonal == current season)
+    current_season = season_of(ctx.now)
+    if "seasonal" in df.columns:
+        df["season_multiplier"] = df["seasonal"].fillna("all").apply(
+            lambda s: 1.15 if s == current_season or s in ["all", "any"] else 1.0
+        )
+    else:
+        df["season_multiplier"] = 1.0
+
     # Budget sensitivity
     budget = ctx.budget_level or (str(user.get("budget_sensitivity", "medium")))
     def budget_mult(cat: str) -> float:
@@ -63,8 +76,36 @@ def score_items(user_id: int, ctx: Context, users: pd.DataFrame, items: pd.DataF
     fav_map = fav_series if isinstance(fav_series, pd.Series) else pd.Series(dtype=float)
     df["favorite_boost"] = df["item_id"].map(fav_map).fillna(0.0) * 0.6 + 1.0
 
-    # Final score
-    df["score"] = df["base"] * df["diet_multiplier"] * df["time_multiplier"] * df["budget_multiplier"] * df["favorite_boost"]
+    # Price alignment to user's historical spend (optional gentle pull)
+    user_spend = orders.loc[orders.user_id == user_id]
+    if not user_spend.empty and "price" in df.columns:
+        # approximate average ticket from orders if total_amount exists; else skip
+        # here we softly center around user's avg item price inferred from items ordered
+        joined = user_spend.merge(df[["item_id", "price"]], on="item_id", how="left")
+        target = joined["price"].dropna().mean()
+        if pd.notna(target):
+            df["price_align"] = (1.0 - (df["price"] - target).abs() / (target + 1e-6)).clip(0.8, 1.2)
+        else:
+            df["price_align"] = 1.0
+    else:
+        df["price_align"] = 1.0
+
+    # Recent-purchase penalty: avoid recommending the exact same item immediately
+    recent = orders.sort_values("timestamp").groupby("user_id").tail(3)
+    recent_ids = set(recent.loc[recent.user_id == user_id, "item_id"].tolist())
+    df["recent_penalty"] = df["item_id"].apply(lambda x: 0.85 if x in recent_ids else 1.0)
+
+    # Final score (content/context)
+    df["score"] = (
+        df["base"]
+        * df["diet_multiplier"]
+        * df["time_multiplier"]
+        * df["season_multiplier"]
+        * df["budget_multiplier"]
+        * df["favorite_boost"]
+        * df["price_align"]
+        * df["recent_penalty"]
+    )
     return df.sort_values("score", ascending=False)
 
 
@@ -87,6 +128,20 @@ def recommend(user_id: int, top_k: int = 10, ctx: Context | None = None) -> pd.D
         (content_scored["score"] + 1e-6) ** 0.7 * (content_scored["cf_score"] + 1e-6) ** 0.3
     )
     scored = content_scored.sort_values("hybrid_score", ascending=False)
+
+    # Simple diversity re-ranking: limit top-N per category
+    max_per_category = 3
+    seen = {}
+    diversified = []
+    for _, row in scored.iterrows():
+        cat = row.get("category")
+        count = seen.get(cat, 0)
+        if count < max_per_category:
+            diversified.append(row)
+            seen[cat] = count + 1
+        if len(diversified) >= 100:
+            break
+    scored = pd.DataFrame(diversified) if diversified else scored
     cols = [
         "item_id", "name", "category", "subcategory", "price", "dietary_tags", "time_preference", "budget_category", "score"
     ]

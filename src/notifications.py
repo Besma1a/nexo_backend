@@ -56,3 +56,4 @@ def generate_notifications(user_id: int, now: datetime | None = None) -> list[di
 
 
 
+
