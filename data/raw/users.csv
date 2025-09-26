@@ -1,26 +1,21 @@
 user_id,name,age,gender,diet,allergies,budget_sensitivity,favorite_categories,disliked_categories,time_preferences,spice_tolerance,health_conscious,location,registration_date,last_visit,visit_frequency,avg_order_value,loyalty_tier,preferred_payment,special_occasions
-1,Sarah Johnson,28,female,vegetarian,"nuts,gluten",medium,"dessert,pizza,coffee","spicy_food",morning_afternoon,low,high,Algiers,2023-01-15,2024-01-15,weekly,450,gold,card,birthday
-2,Ahmed Benali,35,male,chicken,"shellfish",low,"pizza,drinks","dessert",lunch_dinner,high,medium,Algiers,2023-02-20,2024-01-14,daily,380,silver,cash,none
-3,Fatima Zahra,22,female,vegan,"dairy,eggs",high,"juice,pastry","meat",morning,low,high,Algiers,2023-03-10,2024-01-13,weekly,280,bronze,card,none
-4,Omar Cherif,41,male,none,none,low,"pizza,meat,drinks","dessert",dinner,medium,low,Algiers,2023-01-25,2024-01-12,daily,520,platinum,cash,anniversary
-5,Leila Boudjedra,29,female,vegetarian,"nuts",medium,"pizza,dessert,coffee","spicy_food",afternoon,low,high,Algiers,2023-04-05,2024-01-11,weekly,420,gold,card,valentine
-6,Youssef Mekki,33,male,chicken,"shellfish",medium,"pizza,drinks","dessert",lunch_dinner,high,medium,Algiers,2023-02-14,2024-01-10,weekly,360,silver,cash,none
-7,Ines Boukhelkhal,26,female,vegan,"dairy",high,"juice,pastry,tea","meat",morning_afternoon,low,high,Algiers,2023-05-12,2024-01-09,weekly,320,bronze,card,none
-8,Karim Benhamida,38,male,none,none,low,"pizza,meat,drinks","dessert",dinner,high,low,Algiers,2023-01-08,2024-01-08,daily,580,platinum,cash,birthday
-9,Nour El Houda,24,female,vegetarian,"gluten",medium,"pizza,dessert,coffee","spicy_food",afternoon,low,high,Algiers,2023-06-18,2024-01-07,weekly,440,gold,card,none
-10,Mehdi Boudiaf,31,male,chicken,"shellfish",low,"pizza,drinks","dessert",lunch_dinner,medium,medium,Algiers,2023-03-22,2024-01-06,daily,400,silver,cash,none
-11,Aicha Belkacem,27,female,vegan,"dairy,eggs,nuts",high,"juice,pastry,tea","meat",morning,low,high,Algiers,2023-07-03,2024-01-05,weekly,290,bronze,card,none
-12,Adel Chabane,44,male,none,none,low,"pizza,meat,drinks","dessert",dinner,high,low,Algiers,2023-01-12,2024-01-04,daily,620,platinum,cash,anniversary
-13,Salima Benaissa,25,female,vegetarian,"nuts",medium,"pizza,dessert,coffee","spicy_food",afternoon,low,high,Algiers,2023-08-15,2024-01-03,weekly,460,gold,card,none
-14,Reda Hamdi,36,male,chicken,"shellfish",medium,"pizza,drinks","dessert",lunch_dinner,high,medium,Algiers,2023-04-28,2024-01-02,weekly,380,silver,cash,none
-15,Samira Khelil,30,female,vegan,"dairy,gluten",high,"juice,pastry,tea","meat",morning_afternoon,low,high,Algiers,2023-09-07,2024-01-01,weekly,310,bronze,card,none
-16,Tarek Bouzid,39,male,none,none,low,"pizza,meat,drinks","dessert",dinner,high,low,Algiers,2023-02-05,2023-12-31,daily,540,platinum,cash,birthday
-17,Houda Mansouri,23,female,vegetarian,"nuts",medium,"pizza,dessert,coffee","spicy_food",afternoon,low,high,Algiers,2023-10-12,2023-12-30,weekly,430,gold,card,none
-18,Bilal Saadi,32,male,chicken,"shellfish",low,"pizza,drinks","dessert",lunch_dinner,medium,medium,Algiers,2023-05-20,2023-12-29,daily,390,silver,cash,none
-19,Nadia Benali,28,female,vegan,"dairy,eggs",high,"juice,pastry,tea","meat",morning,low,high,Algiers,2023-11-18,2023-12-28,weekly,300,bronze,card,none
-20,Farid Khelifi,42,male,none,none,low,"pizza,meat,drinks","dessert",dinner,high,low,Algiers,2023-01-30,2023-12-27,daily,600,platinum,cash,anniversary
-21,Amina Cherif,26,female,vegetarian,"gluten",medium,"pizza,dessert,coffee","spicy_food",afternoon,low,high,Algiers,2023-12-05,2023-12-26,weekly,420,gold,card,none
-22,Khaled Boudjedra,34,male,chicken,"shellfish",medium,"pizza,drinks","dessert",lunch_dinner,high,medium,Algiers,2023-06-10,2023-12-25,weekly,370,silver,cash,none
-23,Djamila Mekki,29,female,vegan,"dairy,nuts",high,"juice,pastry,tea","meat",morning_afternoon,low,high,Algiers,2023-01-18,2023-12-24,weekly,285,bronze,card,none
-24,Mustapha Boukhelkhal,37,male,none,none,low,"pizza,meat,drinks","dessert",dinner,high,low,Algiers,2023-07-25,2023-12-23,daily,560,platinum,cash,birthday
-25,Asma Benhamida,31,female,vegetarian,"nuts",medium,"pizza,dessert,coffee","spicy_food",afternoon,low,high,Algiers,2023-08-30,2023-12-22,weekly,450,gold,card,none
+1,Sarah Johnson,37,female,vegetarian,shellfish,low,dessert,spicy,"lunch,dinner",low,False,business district,2023-01-01,2024-01-15,monthly,18.55,gold,card,anniversary
+2,Ahmed Benali,58,female,chicken,nuts,low,dessert,dessert,dinner,medium,False,suburbs,2023-01-01,2024-01-15,weekly,45.14,bronze,cash,business
+3,Fatima Zahra,52,female,vegan,dairy,mid,"pasta,italian",seafood,"lunch,dinner",high,True,suburbs,2023-01-01,2024-01-15,weekly,20.68,gold,mobile,business
+4,Omar Cherif,46,male,vegan,dairy,mid,"pizza,burger",spicy,morning,medium,False,university,2023-01-01,2024-01-15,daily,48.79,silver,mobile,none
+5,Emma Wilson,40,male,vegetarian,dairy,high,"pizza,burger",spicy,dinner,low,False,downtown,2023-01-01,2024-01-15,weekly,43.93,platinum,card,none
+6,Carlos Rodriguez,40,male,vegan,nuts,low,"pasta,italian",spicy,"morning,lunch",high,False,suburbs,2023-01-01,2024-01-15,daily,47.35,gold,cash,business
+7,Priya Patel,25,male,vegan,,mid,"pasta,italian",spicy,dinner,high,True,university,2023-01-01,2024-01-15,weekly,27.48,silver,mobile,none
+8,David Kim,37,male,vegan,nuts,mid,"salad,healthy",,"morning,lunch",high,True,business district,2023-01-01,2024-01-15,weekly,31.32,platinum,card,anniversary
+9,Lisa Chen,39,female,vegetarian,nuts,low,seafood,seafood,"morning,lunch",low,False,suburbs,2023-01-01,2024-01-15,daily,37.91,bronze,mobile,birthday
+10,Michael Brown,40,male,chicken,eggs,high,"pizza,burger",spicy,morning,medium,True,downtown,2023-01-01,2024-01-15,monthly,50.0,gold,card,business
+11,Anna Schmidt,21,male,vegan,nuts,low,"pizza,burger",seafood,dinner,low,True,suburbs,2023-01-01,2024-01-15,weekly,37.32,bronze,card,business
+12,James Taylor,22,female,vegan,nuts,high,dessert,dessert,"lunch,dinner",high,False,business district,2023-01-01,2024-01-15,daily,25.89,gold,cash,anniversary
+13,Maria Garcia,49,female,vegan,,mid,"pizza,burger",seafood,"lunch,dinner",low,False,suburbs,2023-01-01,2024-01-15,weekly,42.83,gold,cash,none
+14,John Smith,61,female,chicken,dairy,high,dessert,spicy,dinner,medium,False,business district,2023-01-01,2024-01-15,weekly,30.58,gold,mobile,birthday
+15,Jennifer Lee,35,male,chicken,,mid,"pizza,burger",dessert,dinner,low,False,business district,2023-01-01,2024-01-15,monthly,24.91,gold,cash,anniversary
+16,Robert Davis,39,female,vegetarian,"nuts,dairy",mid,"salad,healthy",spicy,"lunch,dinner",high,True,downtown,2023-01-01,2024-01-15,monthly,42.07,bronze,mobile,none
+17,Amanda White,23,male,chicken,eggs,low,"pizza,burger",spicy,dinner,low,True,university,2023-01-01,2024-01-15,monthly,43.4,bronze,mobile,business
+18,Christopher Jones,24,male,chicken,"nuts,dairy",high,"pasta,italian",spicy,dinner,low,True,business district,2023-01-01,2024-01-15,weekly,28.52,silver,card,birthday
+19,Jessica Miller,27,male,vegetarian,"nuts,dairy",low,"pasta,italian",seafood,dinner,high,False,suburbs,2023-01-01,2024-01-15,weekly,29.33,platinum,cash,business
+20,Daniel Wilson,51,female,none,"nuts,dairy",high,"pasta,italian",dessert,"morning,lunch",medium,False,university,2023-01-01,2024-01-15,monthly,18.41,silver,cash,anniversary

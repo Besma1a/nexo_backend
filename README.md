@@ -1,4 +1,49 @@
-# Smart Menu
+# Smart Menu Project
+
+A Django-based smart menu system that provides personalized food recommendations.
+
+## Setup
+
+1. Clone the repository
+```bash
+git clone <repository-url>
+```
+
+2. Create and activate virtual environment
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+3. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+4. Run migrations
+```bash
+python manage.py migrate
+```
+
+5. Create superuser (optional)
+```bash
+python manage.py createsuperuser
+```
+
+6. Run development server
+```bash
+python manage.py runserver
+```
+
+## Features
+- User questionnaire system
+- Food recommendations
+- Admin interface
+
+## Technologies
+- Python 3.x
+- Django
+- SQLite3
 
 ## Run CLI demo
 

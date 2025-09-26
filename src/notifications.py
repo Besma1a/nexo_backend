@@ -38,7 +38,7 @@ def generate_notifications(user_id: int, now: datetime | None = None) -> list[di
             "cta": "See details"
         })
 
-    # New item in favorite category
+    # New item in favorite category 
     fav_cats = user.get("favorite_categories", [])
     if fav_cats:
         cat = random.choice(fav_cats)

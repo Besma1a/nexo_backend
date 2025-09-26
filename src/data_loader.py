@@ -40,12 +40,25 @@ def _infer_time_of_day(ts: datetime) -> str:
     return "dinner"
 
 
-def load_orders(path: str = "data/raw/orders.csv") -> pd.DataFrame:
-    orders = pd.read_csv(path, parse_dates=["timestamp"], dayfirst=False)
-    # Add derived fields if missing
+def load_orders(orders_path: str = "data/raw/orders.csv", 
+                order_items_path: str = "data/raw/order_items.csv") -> pd.DataFrame:
+    orders = pd.read_csv(orders_path, parse_dates=["timestamp"], dayfirst=False)
+    order_items = pd.read_csv(order_items_path)
+    
+    # Parse list-like fields
+    for col in ['added_ingredients', 'removed_ingredients']:
+        if col in order_items.columns:
+            order_items[col] = order_items[col].fillna("").apply(
+                lambda x: [v.strip() for v in str(x).split(",") if v.strip()]
+            )
+    
+    # Add derived fields
     if "time_of_day" not in orders.columns:
         orders["time_of_day"] = orders["timestamp"].apply(_infer_time_of_day)
-    return orders
+    
+    # Merge orders with order_items to get complete information
+    complete_orders = pd.merge(orders, order_items, on="order_id", how="left")
+    return complete_orders
 
 
 def load_all() -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:

@@ -78,11 +78,16 @@ def score_items(user_id: int, ctx: Context, users: pd.DataFrame, items: pd.DataF
 
     # Price alignment to user's historical spend (optional gentle pull)
     user_spend = orders.loc[orders.user_id == user_id]
-    if not user_spend.empty and "price" in df.columns:
+    if not user_spend.empty and "price" in df.columns and "item_id" in user_spend.columns:
         # approximate average ticket from orders if total_amount exists; else skip
         # here we softly center around user's avg item price inferred from items ordered
         joined = user_spend.merge(df[["item_id", "price"]], on="item_id", how="left")
-        target = joined["price"].dropna().mean()
+        # Use price_y (from items) or price_x (from orders) depending on what's available
+        price_col = "price_y" if "price_y" in joined.columns else "price_x" if "price_x" in joined.columns else "price"
+        if price_col in joined.columns:
+            target = joined[price_col].dropna().mean()
+        else:
+            target = user_spend["total_amount"].mean() / 2  # Fallback
         if pd.notna(target):
             df["price_align"] = (1.0 - (df["price"] - target).abs() / (target + 1e-6)).clip(0.8, 1.2)
         else:
