@@ -1,7 +1,15 @@
 pandas
+<<<<<<< HEAD
+=======
+scikit-learn
+streamlit
+>>>>>>> 2929a20c83374885c753a507262aca7b42e52660
 numpy==1.26.4
 Django>=4.2.0
 Pillow
 python-dotenv
+<<<<<<< HEAD
 fastapi
 uvicorn
+=======
+>>>>>>> 2929a20c83374885c753a507262aca7b42e52660
