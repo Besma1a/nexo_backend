@@ -1,0 +1,21 @@
+name,category,subcategory,price,dietary_tags,time_preference,budget_category,item_id,description,calories,preparation_time,popularity_score,seasonal,image_url
+Margherita Pizza,pizza,classic,15.99,vegetarian,dinner,mid,1,Margherita Pizza - Delicious pizza,354,7,0.47,winter,images/pizza/margherita_pizza.jpg
+Pepperoni Pizza,pizza,meat,17.99,meat,dinner,mid,2,Pepperoni Pizza - Delicious pizza,255,11,0.42,all,images/pizza/pepperoni_pizza.jpg
+Caesar Salad,salad,classic,12.99,vegetarian,lunch,mid,3,Caesar Salad - Delicious salad,395,15,0.4,autumn,images/salad/caesar_salad.jpg
+Grilled Chicken Salad,salad,protein,14.99,chicken,lunch,mid,4,Grilled Chicken Salad - Delicious salad,590,14,0.81,all,images/salad/grilled_chicken_salad.jpg
+Classic Burger,burger,beef,13.99,meat,lunch,mid,5,Classic Burger - Delicious burger,744,25,0.73,winter,images/burger/classic_burger.jpg
+Veggie Burger,burger,vegetarian,12.99,vegetarian,lunch,mid,6,Veggie Burger - Delicious burger,400,23,0.78,summer,images/burger/veggie_burger.jpg
+Chocolate Cake,dessert,chocolate,8.99,"vegetarian,sweet",dinner,low,7,Chocolate Cake - Delicious dessert,735,15,0.7,spring,images/dessert/chocolate_cake.jpg
+Tiramisu,dessert,italian,9.99,"vegetarian,sweet",dinner,mid,8,Tiramisu - Delicious dessert,299,21,0.68,autumn,images/dessert/tiramisu.jpg
+Pasta Carbonara,pasta,italian,16.99,meat,dinner,high,9,Pasta Carbonara - Delicious pasta,266,10,0.3,winter,images/pasta/pasta_carbonara.jpg
+Veggie Pasta,pasta,vegetarian,14.99,vegetarian,dinner,mid,10,Veggie Pasta - Delicious pasta,708,6,0.68,all,images/pasta/veggie_pasta.jpg
+Fish & Chips,seafood,fried,18.99,seafood,dinner,high,11,Fish & Chips - Delicious seafood,566,6,0.38,winter,images/seafood/fish_&_chips.jpg
+Grilled Salmon,seafood,grilled,22.99,seafood,dinner,high,12,Grilled Salmon - Delicious seafood,533,12,0.78,all,images/seafood/grilled_salmon.jpg
+Chicken Wings,appetizer,spicy,11.99,chicken,dinner,mid,13,Chicken Wings - Delicious appetizer,542,11,0.81,winter,images/appetizer/chicken_wings.jpg
+Mozzarella Sticks,appetizer,cheese,9.99,vegetarian,dinner,low,14,Mozzarella Sticks - Delicious appetizer,555,13,0.78,spring,images/appetizer/mozzarella_sticks.jpg
+Fresh Juice,beverage,healthy,6.99,"vegetarian,healthy",morning,low,15,Fresh Juice - Delicious beverage,422,7,0.57,autumn,images/beverage/fresh_juice.jpg
+Coffee,beverage,hot,3.99,vegetarian,morning,low,16,Coffee - Delicious beverage,280,20,0.32,winter,images/beverage/coffee.jpg
+Smoothie Bowl,breakfast,healthy,10.99,"vegetarian,healthy",morning,mid,17,Smoothie Bowl - Delicious breakfast,722,14,0.66,all,images/breakfast/smoothie_bowl.jpg
+Pancakes,breakfast,sweet,8.99,vegetarian,morning,low,18,Pancakes - Delicious breakfast,621,6,0.44,autumn,images/breakfast/pancakes.jpg
+Steak,meat,grilled,28.99,meat,dinner,high,19,Steak - Delicious meat,491,10,0.74,all,images/meat/steak.jpg
+Veggie Wrap,wrap,healthy,9.99,"vegetarian,healthy",lunch,low,20,Veggie Wrap - Delicious wrap,463,14,0.78,spring,images/wrap/veggie_wrap.jpg

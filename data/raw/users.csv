@@ -1,0 +1,21 @@
+user_id,name,age,gender,diet,allergies,budget_sensitivity,favorite_categories,disliked_categories,time_preferences,spice_tolerance,health_conscious,location,registration_date,last_visit,visit_frequency,avg_order_value,loyalty_tier,preferred_payment,special_occasions
+1,Sarah Johnson,37,female,vegetarian,shellfish,low,dessert,spicy,"lunch,dinner",low,False,business district,2023-01-01,2024-01-15,monthly,18.55,gold,card,anniversary
+2,Ahmed Benali,58,female,chicken,nuts,low,dessert,dessert,dinner,medium,False,suburbs,2023-01-01,2024-01-15,weekly,45.14,bronze,cash,business
+3,Fatima Zahra,52,female,vegan,dairy,mid,"pasta,italian",seafood,"lunch,dinner",high,True,suburbs,2023-01-01,2024-01-15,weekly,20.68,gold,mobile,business
+4,Omar Cherif,46,male,vegan,dairy,mid,"pizza,burger",spicy,morning,medium,False,university,2023-01-01,2024-01-15,daily,48.79,silver,mobile,none
+5,Emma Wilson,40,male,vegetarian,dairy,high,"pizza,burger",spicy,dinner,low,False,downtown,2023-01-01,2024-01-15,weekly,43.93,platinum,card,none
+6,Carlos Rodriguez,40,male,vegan,nuts,low,"pasta,italian",spicy,"morning,lunch",high,False,suburbs,2023-01-01,2024-01-15,daily,47.35,gold,cash,business
+7,Priya Patel,25,male,vegan,,mid,"pasta,italian",spicy,dinner,high,True,university,2023-01-01,2024-01-15,weekly,27.48,silver,mobile,none
+8,David Kim,37,male,vegan,nuts,mid,"salad,healthy",,"morning,lunch",high,True,business district,2023-01-01,2024-01-15,weekly,31.32,platinum,card,anniversary
+9,Lisa Chen,39,female,vegetarian,nuts,low,seafood,seafood,"morning,lunch",low,False,suburbs,2023-01-01,2024-01-15,daily,37.91,bronze,mobile,birthday
+10,Michael Brown,40,male,chicken,eggs,high,"pizza,burger",spicy,morning,medium,True,downtown,2023-01-01,2024-01-15,monthly,50.0,gold,card,business
+11,Anna Schmidt,21,male,vegan,nuts,low,"pizza,burger",seafood,dinner,low,True,suburbs,2023-01-01,2024-01-15,weekly,37.32,bronze,card,business
+12,James Taylor,22,female,vegan,nuts,high,dessert,dessert,"lunch,dinner",high,False,business district,2023-01-01,2024-01-15,daily,25.89,gold,cash,anniversary
+13,Maria Garcia,49,female,vegan,,mid,"pizza,burger",seafood,"lunch,dinner",low,False,suburbs,2023-01-01,2024-01-15,weekly,42.83,gold,cash,none
+14,John Smith,61,female,chicken,dairy,high,dessert,spicy,dinner,medium,False,business district,2023-01-01,2024-01-15,weekly,30.58,gold,mobile,birthday
+15,Jennifer Lee,35,male,chicken,,mid,"pizza,burger",dessert,dinner,low,False,business district,2023-01-01,2024-01-15,monthly,24.91,gold,cash,anniversary
+16,Robert Davis,39,female,vegetarian,"nuts,dairy",mid,"salad,healthy",spicy,"lunch,dinner",high,True,downtown,2023-01-01,2024-01-15,monthly,42.07,bronze,mobile,none
+17,Amanda White,23,male,chicken,eggs,low,"pizza,burger",spicy,dinner,low,True,university,2023-01-01,2024-01-15,monthly,43.4,bronze,mobile,business
+18,Christopher Jones,24,male,chicken,"nuts,dairy",high,"pasta,italian",spicy,dinner,low,True,business district,2023-01-01,2024-01-15,weekly,28.52,silver,card,birthday
+19,Jessica Miller,27,male,vegetarian,"nuts,dairy",low,"pasta,italian",seafood,dinner,high,False,suburbs,2023-01-01,2024-01-15,weekly,29.33,platinum,cash,business
+20,Daniel Wilson,51,female,none,"nuts,dairy",high,"pasta,italian",dessert,"morning,lunch",medium,False,university,2023-01-01,2024-01-15,monthly,18.41,silver,cash,anniversary
